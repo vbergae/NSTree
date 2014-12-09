@@ -66,15 +66,15 @@ typedef enum {
 typedef bool (^NSTreeTraverseBlock)(NSTreeNode *node, id data, id extra);
 
 @interface NSTree : NSObject<NSFastEnumeration, NSCopying>
-    @property (nonatomic, assign, readonly) int count;
-    @property (nonatomic, assign, readonly) int nodeCapacity; 
+    @property (nonatomic, assign, readonly) NSUInteger count;
+    @property (nonatomic, assign, readonly) NSUInteger nodeCapacity;
     @property (nonatomic, assign, readonly) bool cacheOutdated;  
 
     /** @brief Create tree with a certain number of allowable children */
-    - (id)initWithNodeCapacity:(int)nodeCapacity;
+    - (id)initWithNodeCapacity:(NSUInteger)nodeCapacity;
     
     /** @brief Create tree with a certain number of allowable children using the given sorted array of objects as its base data */
-    - (id)initWithNodeCapacity:(int)nodeCapacity withSortedObjects:(NSArray *)data;
+    - (id)initWithNodeCapacity:(NSUInteger)nodeCapacity withSortedObjects:(NSArray *)data;
 
     /** @brief Add object to tree
         @param object An id that must implement compare: function
@@ -116,7 +116,7 @@ typedef bool (^NSTreeTraverseBlock)(NSTreeNode *node, id data, id extra);
     - (NSString *)printTree;
 
     /** @brief Returns object at index, or nil if none / out of bounds */
-    - (id)objectAtIndex:(int)index;
+    - (id)objectAtIndex:(NSInteger)index;
 
     /** @brief Traverse the tree in sorted order while executing block on every element
         @param block Traversal block to be called on data as we traverse 

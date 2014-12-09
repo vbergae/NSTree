@@ -72,14 +72,14 @@ static NSManagedObjectContext *moc;
         tree3 = [[NSTree alloc] initWithNodeCapacity:3 withSortedObjects:data];   
         tree30 = [[NSTree alloc] initWithNodeCapacity:30 withSortedObjects:data];  
         tree300 = [[NSTree alloc] initWithNodeCapacity:300 withSortedObjects:data];  
-        NSLog(@"Tree3 Count: %i", tree3.count);  
-        NSLog(@"Tree30 Count: %i", tree30.count);   
-        NSLog(@"Tree300 Count: %i", tree300.count);   
+        NSLog(@"Tree3 Count: %lu", (unsigned long)tree3.count);
+        NSLog(@"Tree30 Count: %lu", (unsigned long)tree30.count);   
+        NSLog(@"Tree300 Count: %lu", (unsigned long)tree300.count);   
     }
     if (ARRAY) {
         NSLog(@"Creating Array"); 
         array = [[NSMutableArray alloc] initWithArray:data];
-        NSLog(@"Array Count: %i", array.count); 
+        NSLog(@"Array Count: %lu", (unsigned long)array.count); 
     }
     if (DICT) {
         NSLog(@"Creating Dict");  
@@ -87,7 +87,7 @@ static NSManagedObjectContext *moc;
         for (id object in data) {
             [dict setObject:object forKey:[object description]];
         } 
-        NSLog(@"Dict Count: %i", dict.count);
+        NSLog(@"Dict Count: %lu", (unsigned long)dict.count);
     }
     
     if (CORE) 
@@ -145,7 +145,7 @@ static NSManagedObjectContext *moc;
         if (error) {
             NSLog(@"Fetching from Core Data Failed: %@", error); 
         }
-        NSLog(@"Core Data Entry Count: %i", results.count); 
+        NSLog(@"Core Data Entry Count: %lu", (unsigned long)results.count);
     }
     
     // End timer
@@ -384,7 +384,8 @@ static NSManagedObjectContext *moc;
     }
     [fetch setPredicate:[NSCompoundPredicate orPredicateWithSubpredicates:predicates]];
     NSError *error;  
-    NSArray *results = [moc executeFetchRequest:fetch error:&error]; 
+    NSArray *results;
+    results = [moc executeFetchRequest:fetch error:&error];
     if (error) {
         NSLog(@"Error fetching criteria: %@", error);
     }

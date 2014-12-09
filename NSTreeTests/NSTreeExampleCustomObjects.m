@@ -29,7 +29,7 @@
     return result;
 }
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@ #%i", self.userName, self.userID];
+    return [NSString stringWithFormat:@"%@ #%lu", self.userName, (unsigned long)self.userID];
 }
 @end
     
@@ -56,7 +56,7 @@
         object.userName = [self genRandStringLength:NAME_LENGTH];
         [self.data addObject:object];
     }   
-    NSLog(@"Data count: %i", self.data.count);
+    NSLog(@"Data count: %lu", (unsigned long)self.data.count);
     
     // Setup trees
     self.tree = [[NSTree alloc] initWithNodeCapacity:NODE_CAPACITY];

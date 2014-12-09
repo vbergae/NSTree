@@ -31,7 +31,7 @@
     for (int i = 1; i <= NUM_ELEMENTS; ++i) {
         [self.data addObject: @(arc4random() % NUM_ELEMENTS)];
     }   
-    NSLog(@"Data count: %i", self.data.count);
+    NSLog(@"Data count: %lu", (unsigned long)self.data.count);
     
     // Setup trees
     self.trees = [NSMutableArray new];
@@ -39,10 +39,10 @@
         NSLog(@"Capacity: %i", i);
         [self.trees addObject:[[NSTree alloc] initWithNodeCapacity:i]];
     }
-    NSLog(@"# trees: %i", self.trees.count);
+    NSLog(@"# trees: %lu", (unsigned long)self.trees.count);
 }
 
-- (void)tearDown  
+- (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
@@ -52,7 +52,7 @@
 {
     NSDate *start;
     for (NSTree *tree in self.trees) {
-        NSLog(@"Inserting into tree with capcity: %i", tree.nodeCapacity);
+        NSLog(@"Inserting into tree with capcity: %lu", (unsigned long)tree.nodeCapacity);
         start = [NSDate date];
         for (id object in self.data) { 
             [tree addObject:object];
@@ -73,7 +73,7 @@
     // Search
     NSDate *start;
     for (NSTree *tree in self.trees) {
-        NSLog(@"Searching tree with capcity: %i", tree.nodeCapacity);
+        NSLog(@"Searching tree with capcity: %lu", (unsigned long)tree.nodeCapacity);
         start = [NSDate date];
         for (id object in self.data) { 
             [tree containsObject:object];
@@ -94,14 +94,14 @@
     // Delete
     NSDate *start;
     for (NSTree *tree in self.trees) {
-        NSLog(@"Deleting from tree with capcity: %i", tree.nodeCapacity);
+        NSLog(@"Deleting from tree with capcity: %lu", (unsigned long)tree.nodeCapacity);
         start = [NSDate date];
         for (id object in self.data) { 
             [tree removeObject:object];
         }
         NSLog(@"Completed in %f", -[start timeIntervalSinceNow]);
-        XCTAssertEqual(tree.count, 0, @"%i Tree count %i not 0!", tree.nodeCapacity, tree.count);
-        XCTAssertEqual([tree trueCount], 0, @"%i True count %i not 0!", tree.nodeCapacity, [tree trueCount]); 
+        XCTAssertEqual(tree.count, 0, @"%lu Tree count %lu not 0!", (unsigned long)tree.nodeCapacity, (unsigned long)tree.count);
+        XCTAssertEqual([tree trueCount], 0, @"%lu True count %i not 0!", (unsigned long)tree.nodeCapacity, [tree trueCount]); 
     }
     
 }

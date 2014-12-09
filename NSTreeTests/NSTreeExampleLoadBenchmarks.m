@@ -177,7 +177,7 @@
     if (error) {
         NSLog(@"Fetching from Core Data Failed: %@", error); 
     }
-    NSLog(@"Core Data Entry Count: %i", results.count); 
+    NSLog(@"Core Data Entry Count: %lu", (unsigned long)results.count);
 }
 
 
