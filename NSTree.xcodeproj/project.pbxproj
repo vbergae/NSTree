@@ -15,6 +15,8 @@
 		CC2673231A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731E1A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m */; };
 		CC2673241A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731F1A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m */; };
 		CC2673251A3718BC004B9CCA /* NSTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2673201A3718BC004B9CCA /* NSTreeTests.m */; };
+		CC2673271A371BE0004B9CCA /* NSTree.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CC2673261A371BE0004B9CCA /* NSTree.podspec */; };
+		CC2673291A371C84004B9CCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2673281A371C84004B9CCA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		CC26731E1A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleFunctionBenchmarks.m; sourceTree = "<group>"; };
 		CC26731F1A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleLoadBenchmarks.m; sourceTree = "<group>"; };
 		CC2673201A3718BC004B9CCA /* NSTreeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeTests.m; sourceTree = "<group>"; };
+		CC2673261A371BE0004B9CCA /* NSTree.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSTree.podspec; sourceTree = "<group>"; };
+		CC2673281A371C84004B9CCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2673291A371C84004B9CCA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +80,10 @@
 		CC2672F61A3717C9004B9CCA = {
 			isa = PBXGroup;
 			children = (
+				CC2673261A371BE0004B9CCA /* NSTree.podspec */,
 				CC2673061A3717F8004B9CCA /* NSTree */,
 				CC2673131A3717F8004B9CCA /* NSTreeTests */,
+				CC26732A1A371C9E004B9CCA /* Frameworks */,
 				CC2673051A3717F8004B9CCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +125,14 @@
 				CC2673151A3717F8004B9CCA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC26732A1A371C9E004B9CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2673281A371C84004B9CCA /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2673271A371BE0004B9CCA /* NSTree.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
