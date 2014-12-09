@@ -10,6 +10,11 @@
 		CC2673081A3717F8004B9CCA /* NSTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC2673071A3717F8004B9CCA /* NSTree.h */; };
 		CC26730A1A3717F8004B9CCA /* NSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2673091A3717F8004B9CCA /* NSTree.m */; };
 		CC2673101A3717F8004B9CCA /* libNSTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2673041A3717F8004B9CCA /* libNSTree.a */; };
+		CC2673211A3718BC004B9CCA /* NSTreeExampleCapacityRatios.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731C1A3718BC004B9CCA /* NSTreeExampleCapacityRatios.m */; };
+		CC2673221A3718BC004B9CCA /* NSTreeExampleCustomObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731D1A3718BC004B9CCA /* NSTreeExampleCustomObjects.m */; };
+		CC2673231A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731E1A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m */; };
+		CC2673241A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26731F1A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m */; };
+		CC2673251A3718BC004B9CCA /* NSTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2673201A3718BC004B9CCA /* NSTreeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 		CC2673091A3717F8004B9CCA /* NSTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTree.m; sourceTree = "<group>"; };
 		CC26730F1A3717F8004B9CCA /* NSTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2673151A3717F8004B9CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC26731C1A3718BC004B9CCA /* NSTreeExampleCapacityRatios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleCapacityRatios.m; sourceTree = "<group>"; };
+		CC26731D1A3718BC004B9CCA /* NSTreeExampleCustomObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleCustomObjects.m; sourceTree = "<group>"; };
+		CC26731E1A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleFunctionBenchmarks.m; sourceTree = "<group>"; };
+		CC26731F1A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeExampleLoadBenchmarks.m; sourceTree = "<group>"; };
+		CC2673201A3718BC004B9CCA /* NSTreeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,11 @@
 		CC2673131A3717F8004B9CCA /* NSTreeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC26731C1A3718BC004B9CCA /* NSTreeExampleCapacityRatios.m */,
+				CC26731D1A3718BC004B9CCA /* NSTreeExampleCustomObjects.m */,
+				CC26731E1A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m */,
+				CC26731F1A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m */,
+				CC2673201A3718BC004B9CCA /* NSTreeTests.m */,
 				CC2673141A3717F8004B9CCA /* Supporting Files */,
 			);
 			path = NSTreeTests;
@@ -200,6 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2673211A3718BC004B9CCA /* NSTreeExampleCapacityRatios.m in Sources */,
+				CC2673231A3718BC004B9CCA /* NSTreeExampleFunctionBenchmarks.m in Sources */,
+				CC2673251A3718BC004B9CCA /* NSTreeTests.m in Sources */,
+				CC2673221A3718BC004B9CCA /* NSTreeExampleCustomObjects.m in Sources */,
+				CC2673241A3718BC004B9CCA /* NSTreeExampleLoadBenchmarks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
