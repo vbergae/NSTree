@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC2673081A3717F8004B9CCA /* NSTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC2673071A3717F8004B9CCA /* NSTree.h */; };
+		CC26730A1A3717F8004B9CCA /* NSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2673091A3717F8004B9CCA /* NSTree.m */; };
+		CC2673101A3717F8004B9CCA /* libNSTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2673041A3717F8004B9CCA /* libNSTree.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC2673111A3717F8004B9CCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC2672F71A3717C9004B9CCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2673031A3717F8004B9CCA;
+			remoteInfo = NSTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC2673021A3717F8004B9CCA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CC2673081A3717F8004B9CCA /* NSTree.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC2673041A3717F8004B9CCA /* libNSTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNSTree.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2673071A3717F8004B9CCA /* NSTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTree.h; sourceTree = "<group>"; };
+		CC2673091A3717F8004B9CCA /* NSTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTree.m; sourceTree = "<group>"; };
+		CC26730F1A3717F8004B9CCA /* NSTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2673151A3717F8004B9CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC2673011A3717F8004B9CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26730C1A3717F8004B9CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2673101A3717F8004B9CCA /* libNSTree.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC2672F61A3717C9004B9CCA = {
+			isa = PBXGroup;
+			children = (
+				CC2673061A3717F8004B9CCA /* NSTree */,
+				CC2673131A3717F8004B9CCA /* NSTreeTests */,
+				CC2673051A3717F8004B9CCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC2673051A3717F8004B9CCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC2673041A3717F8004B9CCA /* libNSTree.a */,
+				CC26730F1A3717F8004B9CCA /* NSTreeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC2673061A3717F8004B9CCA /* NSTree */ = {
+			isa = PBXGroup;
+			children = (
+				CC2673071A3717F8004B9CCA /* NSTree.h */,
+				CC2673091A3717F8004B9CCA /* NSTree.m */,
+			);
+			path = NSTree;
+			sourceTree = "<group>";
+		};
+		CC2673131A3717F8004B9CCA /* NSTreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2673141A3717F8004B9CCA /* Supporting Files */,
+			);
+			path = NSTreeTests;
+			sourceTree = "<group>";
+		};
+		CC2673141A3717F8004B9CCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC2673151A3717F8004B9CCA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC2673031A3717F8004B9CCA /* NSTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2673161A3717F9004B9CCA /* Build configuration list for PBXNativeTarget "NSTree" */;
+			buildPhases = (
+				CC2673001A3717F8004B9CCA /* Sources */,
+				CC2673011A3717F8004B9CCA /* Frameworks */,
+				CC2673021A3717F8004B9CCA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSTree;
+			productName = NSTree;
+			productReference = CC2673041A3717F8004B9CCA /* libNSTree.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC26730E1A3717F8004B9CCA /* NSTreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2673191A3717F9004B9CCA /* Build configuration list for PBXNativeTarget "NSTreeTests" */;
+			buildPhases = (
+				CC26730B1A3717F8004B9CCA /* Sources */,
+				CC26730C1A3717F8004B9CCA /* Frameworks */,
+				CC26730D1A3717F8004B9CCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2673121A3717F8004B9CCA /* PBXTargetDependency */,
+			);
+			name = NSTreeTests;
+			productName = NSTreeTests;
+			productReference = CC26730F1A3717F8004B9CCA /* NSTreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC2672F71A3717C9004B9CCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					CC2673031A3717F8004B9CCA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CC26730E1A3717F8004B9CCA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = CC2672FA1A3717C9004B9CCA /* Build configuration list for PBXProject "NSTree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC2672F61A3717C9004B9CCA;
+			productRefGroup = CC2673051A3717F8004B9CCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC2673031A3717F8004B9CCA /* NSTree */,
+				CC26730E1A3717F8004B9CCA /* NSTreeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC26730D1A3717F8004B9CCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2673001A3717F8004B9CCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26730A1A3717F8004B9CCA /* NSTree.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26730B1A3717F8004B9CCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC2673121A3717F8004B9CCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2673031A3717F8004B9CCA /* NSTree */;
+			targetProxy = CC2673111A3717F8004B9CCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC2672FB1A3717C9004B9CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CC2672FC1A3717C9004B9CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		CC2673171A3717F9004B9CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC2673181A3717F9004B9CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC26731A1A3717F9004B9CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NSTreeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC26731B1A3717F9004B9CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NSTreeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC2672FA1A3717C9004B9CCA /* Build configuration list for PBXProject "NSTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2672FB1A3717C9004B9CCA /* Debug */,
+				CC2672FC1A3717C9004B9CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2673161A3717F9004B9CCA /* Build configuration list for PBXNativeTarget "NSTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2673171A3717F9004B9CCA /* Debug */,
+				CC2673181A3717F9004B9CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC2673191A3717F9004B9CCA /* Build configuration list for PBXNativeTarget "NSTreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC26731A1A3717F9004B9CCA /* Debug */,
+				CC26731B1A3717F9004B9CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC2672F71A3717C9004B9CCA /* Project object */;
+}
